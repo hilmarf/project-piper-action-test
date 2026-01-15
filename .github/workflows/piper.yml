@@ -15,6 +15,9 @@ env:
   MAVENBUILD_FLAGS: '["--verify", "--verbose", "--logSuccessfulMavenTransfers"]'
   GRADLEEXECUTEBUILD_FLAGS: '["--verbose"]'
 
+permissions:
+  contents: write
+
 jobs:
   piper-test:
     runs-on: ubuntu-latest
