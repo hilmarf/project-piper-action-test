@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
 
 # set environment variables for all jobs
 env:
@@ -27,8 +27,8 @@ jobs:
         uses: hilmarf/project-piper-action@pass/stepFlagsEnvVar
         with:
           step-name: gradleExecuteBuild
-		  docker-image: gradle:9.1-jdk25
-        
+          docker-image: "gradle:9.1-jdk25"
+
       - name: mavenBuild
         # use fork from https://github.com/hilmarf/project-piper-action/tree/pass/stepFlagsEnvVar
         uses: hilmarf/project-piper-action@pass/stepFlagsEnvVar
