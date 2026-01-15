@@ -13,7 +13,7 @@ on:
 env:
   ARTIFACTPREPAREVERSION_FLAGS: '["--shortCommitId", "--buildTool", "maven", "--verbose"]'
   MAVENBUILD_FLAGS: '["--verify", "--verbose", "--logSuccessfulMavenTransfers"]'
-  GRADLEEXECUTEBUILD_FLAGS: '["--info"]'
+  GRADLEEXECUTEBUILD_FLAGS: '["--verbose"]'
 
 jobs:
   piper-test:
