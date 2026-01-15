@@ -27,6 +27,7 @@ jobs:
         uses: hilmarf/project-piper-action@pass/stepFlagsEnvVar
         with:
           step-name: gradleExecuteBuild
+		  docker-image: gradle:9.1-jdk25
         
       - name: mavenBuild
         # use fork from https://github.com/hilmarf/project-piper-action/tree/pass/stepFlagsEnvVar
