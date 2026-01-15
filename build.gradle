@@ -1,0 +1,11 @@
+println '=' * 80
+println 'available environment variables:'
+println '=' * 80
+
+System.getenv().sort().each { key, value ->
+    println "${key}=${value}"
+}
+
+println '=' * 80
+println "In total ${System.getenv().size()} environment variables found"
+println '=' * 80
