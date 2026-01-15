@@ -11,7 +11,7 @@ on:
 
 # set environment variables for all jobs
 env:
-  ARTIFACTPREPAREVERSION_FLAGS: '["--shortCommitId"]'
+  ARTIFACTPREPAREVERSION_FLAGS: '["--shortCommitId", "--buildTool", "maven", "--verbose"]'
   MAVENBUILD_FLAGS: '["--verify", "--verbose", "--logSuccessfulMavenTransfers"]'
 
 jobs:
