@@ -26,11 +26,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: gradleExecuteBuild
-        # use fork from https://github.com/hilmarf/project-piper-action/tree/pass/stepFlagsEnvVar
         uses: SAP/project-piper-action@main
         with:
           step-name: gradleExecuteBuild
-          docker-image: "gradle:9.1-jdk25"
 
       - name: mavenBuild
         # use fork from https://github.com/hilmarf/project-piper-action/tree/pass/stepFlagsEnvVar
